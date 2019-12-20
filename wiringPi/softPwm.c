@@ -84,11 +84,11 @@ static PI_THREAD (softPwmThread)
 
     if (mark != 0)
       digitalWrite (pin, HIGH) ;
-    delayMicroseconds (mark * 100) ;
+    delayMicroseconds (mark) ;
 
     if (space != 0)
       digitalWrite (pin, LOW) ;
-    delayMicroseconds (space * 100) ;
+    delayMicroseconds (space) ;
   }
 
   return NULL ;
