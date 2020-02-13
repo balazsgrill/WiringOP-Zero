@@ -2368,7 +2368,7 @@ void pwmWrite (int pin, int value)
 		  if ((node = wiringPiFindNode (pin)) != NULL){
 			 if (wiringPiDebug)
 					 printf ("Jim find node%s,%d\n", __func__, __LINE__) ;
-		   node->digitalWrite (node, pin, value) ;
+		   node->pwmWrite (node, pin, value) ;
 		  }
 		 }
 		   if (wiringPiDebug)
