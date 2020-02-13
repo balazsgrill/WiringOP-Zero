@@ -10,8 +10,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: wiringPi
-      run: cd wiringPi && make install
+      run: cd wiringPi && make
     - name: devlib
-      run: cd devLib && make install
+      run: cd devLib && make
     - name: gpio
       run: cd gpio && make
